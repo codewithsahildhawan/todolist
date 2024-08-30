@@ -26,7 +26,7 @@ class ItemController extends Controller
                 <td>'.$item['id'].'</td>
                 <td>'.$item['name'].'</td>
                 <td>'.(($item['status'] == 1) ? "Done" : " - ").'</td>
-                <td><a type="button" data-id="'.$item['id'].'" class="btn badge bg-success statusbtn btn-sm"> <i class="fa fa-check"></i></a> | <a type="button" data-id="'.$item['id'].'" class="btn badge bg-danger deletebtn btn-sm"><i class="fa fa-close"></i></a></td>
+                <td>'.(($item['status'] == 1) ? '<a type="button" data-id="'.$item['id'].'" class="btn badge bg-danger deletebtn btn-sm"><i class="fa fa-close"></i></a>' : '<a type="button" data-id="'.$item['id'].'" class="btn badge bg-success statusbtn btn-sm"> <i class="fa fa-check"></i></a> | <a type="button" data-id="'.$item['id'].'" class="btn badge bg-danger deletebtn btn-sm"><i class="fa fa-close"></i></a>').'</td>
             </tr>';
         }
 
