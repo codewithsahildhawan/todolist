@@ -1,0 +1,11 @@
+.mt-200 {
+    margin-top:200px
+}
+
+.todo-list-container hr {
+    color: #6f6969;
+    margin: 15px 20px;
+}
+.alert p {
+    margin-bottom: 0
+}
